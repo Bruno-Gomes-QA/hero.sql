@@ -10,13 +10,18 @@ class Database:
         self.url = url
         self.database_name = database_name
 
-        self.engine = sa.create_engine(f'{self.url}/{self.database_name}')
+        if self.database_name:
+            self.engine = sa.create_engine(f'{self.url}/{self.database_name}')
+            self.metadata = sa.MetaData(bind=self.engine)
+            self.metadata.reflect(bind=self.engine)
+            self.inspects = sa.inspect(self.engine)
+        else:
+            self.engine = sa.create_engine(self.url)
+
         self.SessionFactory = sessionmaker(bind=self.engine)
         self.Session = scoped_session(self.SessionFactory)
 
-        self.metadata = sa.MetaData(bind=self.engine)
-        self.metadata.reflect(bind=self.engine)
-        self.inspects = sa.inspect(self.engine)
+
 
     def create_tables(self, Base):
         Base.metadata.create_all(self.engine)
