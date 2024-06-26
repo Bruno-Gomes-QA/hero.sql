@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "hero-sql"
+version = "0.1.0"
+description = ""
+authors = ["Bruno Menezes <bruno.gomes.qa@gmail.com>"]
+readme = "README.md"
+packages = [{include = "hero"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sqlacodegen = "^2.3.0.post1"
+blue = "^0.9.1"
+pytest = "^8.2.2"
+python-dotenv = "^1.0.1"
+flask = "^3.0.3"
+flask-pydantic-spec = "^0.6.0"
+streamlit = "^1.36.0"
+pymysql = "^1.1.1"
+openai ="0.28"
+cryptography = "^42.0.8"
+streamlit-js-eval = "^0.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
