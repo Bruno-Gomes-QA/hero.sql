@@ -6,6 +6,12 @@
 Olá, seja bem-vindo! Hero.SQL é uma iniciativa para ensinar os fundamentos de SQL (Structured Query Language) de uma maneira envolvente. O jogo se passa em um cenário medieval onde os jogadores assumem o papel de um assistente do Rei Queryon. O objetivo do jogo é ajudar o rei a organizar seu reino criando e manipulando bancos de dados.
 
 </div>
+<b></b>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/d0bb0cbe-7a42-4d6a-b8b5-4f1ec341e72a" width="30%">
+  <img src="https://github.com/user-attachments/assets/b3356ad7-e0bf-42da-bff3-58ce9a32a185" width="30%">
+  <img src="https://github.com/user-attachments/assets/098abe48-c214-43fe-b865-a07450cc7809" width="30%">
+</div>
 
 <div>
   <h2 id="Estrutura">Estrutura 🛠️</h2>
